@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS Farm Vietnam | Premium Agricultural Supplier</title>
+    
+    <!-- FAVICON: Hiển thị logo trên tab trình duyệt -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/zvHw2p3X/newsmile-logo-vuo-ng-ne-n-trong.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAFAF7',     /* Trắng ngà tự nhiên */
+                        cream: '#F2EFE9',     /* Be hạt điều/gạo */
+                        charcoal: '#1A2421',  /* Đen ánh xanh rêu đậm */
+                        wood: '#A67C52',      /* Nâu gỗ/vỏ dừa ấm */
+                        brandGreen: '#1B4D3E', /* Xanh lá thẫm sang trọng */
+                        leaf: '#3A7D54',      /* Xanh lá cây tươi */
+                    },
+                    fontFamily: { 
+                        serif: ['"Playfair Display"', 'serif'], 
+                        sans: ['"DM Sans"', 'sans-serif'] 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FAFAF7; }
+        ::-webkit-scrollbar-thumb { background: #3A7D54; }
+        
+        .bg-hero {
+            background-image: linear-gradient(rgba(26, 36, 33, 0.65), rgba(26, 36, 33, 0.85)), url('https://i.pinimg.com/736x/c4/63/b2/c463b273f457a3061f84570b1b232ed9.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-charcoal bg-ivory antialiased selection:bg-leaf selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-ivory/95 backdrop-blur-md border-b border-brandGreen/10 transition-all duration-300 py-3 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="https://i.postimg.cc/zvHw2p3X/newsmile-logo-vuo-ng-ne-n-trong.png" alt="NS Farm Logo" class="h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                <span class="font-serif text-2xl font-bold text-brandGreen tracking-wide">NS FARM</span>
+            </a>
+            <div class="hidden lg:flex space-x-7 text-[13px] uppercase tracking-widest items-center font-medium">
+                <a href="#about" class="hover:text-leaf transition-colors duration-300">About Us</a>
+                <a href="#products" class="hover:text-leaf transition-colors duration-300">Products</a>
+                <a href="#process" class="hover:text-leaf transition-colors duration-300">Export Process</a>
+                <a href="https://wa.me/84766653333" target="_blank" class="px-5 py-2 bg-leaf text-white hover:bg-brandGreen transition-all duration-300 flex items-center gap-2 rounded-sm shadow-sm">
+                    <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <header class="bg-hero min-h-screen flex items-center justify-center text-center px-4 relative pt-20">
+        <div class="max-w-4xl mx-auto text-white" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-xs md:text-sm uppercase tracking-[0.3em] mb-6 text-white/80 font-medium">Vietnam Agricultural Products Supplier</h2>
+            <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">Vietnamese Agricultural Products <br><span class="italic font-light text-white/90">for Global Markets</span></h1>
+            
+            <p class="text-lg font-light text-white/90 mb-4 tracking-wide max-w-2xl mx-auto">
+                Your Partner for Sourcing and Exporting Agricultural Products from Vietnam.
+            </p>
+            <p class="text-sm font-light text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
+                NS Farm Vietnam connects international buyers with Vietnamese agricultural products through flexible sourcing solutions, customer-focused specifications and reliable export coordination.
+            </p>
+
+            <div class="flex flex-col items-center mt-6">
+                
+                <div class="bg-white/10 backdrop-blur-md px-6 py-3.5 mb-8 inline-flex flex-wrap justify-center items-center gap-4 text-[11px] sm:text-xs uppercase tracking-[0.15em] font-semibold text-[#4ADE80] rounded-sm border border-white/5 shadow-inner">
+                    <a href="#coconut-products" class="hover:text-white transition-colors">Coconut Products</a>
+                    <span class="text-white/30 text-xs">|</span>
+                    <a href="#other-products" class="hover:text-white transition-colors">Other Agricultural Products</a>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md">
+                    <a href="#products" class="flex-1 px-4 py-4 bg-leaf text-white hover:bg-brandGreen transition-all duration-300 tracking-[0.15em] uppercase text-[12px] font-bold text-center rounded-sm shadow-md border border-leaf hover:border-brandGreen">
+                        Explore Our Products
+                    </a>
+                    <a href="#contact" class="flex-1 px-4 py-4 bg-transparent border border-white text-white hover:bg-white hover:text-charcoal transition-all duration-300 tracking-[0.15em] uppercase text-[12px] font-bold text-center rounded-sm">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. ABOUT US -->
+    <section id="about" class="py-24 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-cream rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div data-aos="fade-right">
+                <div class="p-2 bg-white shadow-xl rounded-md border border-leaf/10 transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="https://i.postimg.cc/QCJ3WLZ2/image.png" alt="NS Farm Vietnam" class="w-full h-auto object-cover rounded-sm">
+                </div>
+            </div>
+            
+            <div data-aos="fade-left" class="flex flex-col justify-center h-full">
+                <h3 class="font-serif text-4xl md:text-5xl mb-8 leading-tight text-charcoal">Connecting Vietnamese Agriculture <br><span class="text-leaf italic font-light">with Global Markets</span></h3>
+                <div class="space-y-6 text-charcoal/70 font-light leading-relaxed mb-10 text-[15px]">
+                    <p><strong class="font-medium text-brandGreen">NS Farm Vietnam</strong> is a Vietnam-based agricultural products supplier focused on connecting international buyers with suitable sources of Vietnamese agricultural products.</p>
+                    <p>We work with suppliers and processing partners to meet customer requirements for product specifications, quality, packaging and export arrangements. Our current product portfolio focuses on <strong class="font-medium text-brandGreen">coconut and coconut-based products</strong>, with opportunities to expand into other agricultural commodities according to market demand.</p>
+                    <p>Our goal is to build long-term business relationships through responsive communication, flexible sourcing and dependable export coordination.</p>
+                </div>
+
+                <div class="pt-8 border-t border-brandGreen/10">
+                    <p class="text-xs uppercase tracking-[0.2em] text-charcoal/50 font-bold mb-5 flex items-center gap-2">
+                        <i class="fas fa-award text-wood"></i> Certification:
+                    </p>
+                    <div class="flex flex-wrap gap-2 w-full">
+                        <span class="bg-leaf/10 text-brandGreen font-bold px-4 py-2.5 rounded-sm border border-leaf/20 hover:bg-leaf hover:text-white hover:-translate-y-1 transition-all duration-300 text-sm shadow-sm cursor-default">FDA</span>
+                        <span class="bg-leaf/10 text-brandGreen font-bold px-4 py-2.5 rounded-sm border border-leaf/20 hover:bg-leaf hover:text-white hover:-translate-y-1 transition-all duration-300 text-sm shadow-sm cursor-default">BRCGS Food Safety - Issue 9</span>
+                        <span class="bg-leaf/10 text-brandGreen font-bold px-4 py-2.5 rounded-sm border border-leaf/20 hover:bg-leaf hover:text-white hover:-translate-y-1 transition-all duration-300 text-sm shadow-sm cursor-default">KOSHER</span>
+                        <span class="bg-leaf/10 text-brandGreen font-bold px-4 py-2.5 rounded-sm border border-leaf/20 hover:bg-leaf hover:text-white hover:-translate-y-1 transition-all duration-300 text-sm shadow-sm cursor-default">Halal</span>
+                        <span class="bg-leaf/10 text-brandGreen font-bold px-4 py-2.5 rounded-sm border border-leaf/20 hover:bg-leaf hover:text-white hover:-translate-y-1 transition-all duration-300 text-sm shadow-sm cursor-default">ISO 9001-2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. OUR PRODUCTS -->
+    <section id="products" class="py-24 px-6 bg-cream/60 border-t border-brandGreen/5">
+        <div class="max-w-7xl mx-auto text-center mb-24" data-aos="fade-up">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-leaf mb-3 font-semibold">Our Products</h2>
+            <h3 class="font-serif text-4xl md:text-5xl text-charcoal mb-4">Vietnamese Agricultural Products <br><span class="italic font-light">for Your Business</span></h3>
+            <p class="text-charcoal/60 font-light max-w-2xl mx-auto">We focus on coconut products and aim to expand our agricultural product portfolio to meet the needs of international buyers.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-32">
+            
+            <!-- SẢN PHẨM A: COCONUT PRODUCTS -->
+            <div id="coconut-products" class="flex flex-col lg:flex-row gap-12 items-center scroll-mt-24">
+                <div class="lg:w-1/3" data-aos="fade-right">
+                    <div class="inline-block px-3 py-1 bg-brandGreen/10 text-brandGreen text-[10px] uppercase tracking-widest rounded-sm mb-6 font-bold">Primary Portfolio</div>
+                    <h4 class="font-serif text-3xl text-charcoal mb-3">A. Coconut Products</h4>
+                    <p class="font-medium text-leaf mb-6">Natural Products from Vietnam</p>
+                    <p class="text-[15px] font-light text-charcoal/70 mb-8 leading-relaxed">Our current product portfolio includes coconut and coconut-based products for importers, distributors, wholesalers and food manufacturers.</p>
+                    
+                    <p class="text-xs uppercase tracking-widest text-charcoal font-bold mb-4 border-b border-charcoal/10 pb-2">Product Categories:</p>
+                    <ul class="space-y-3 text-[15px] font-light text-charcoal/80 mb-8">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Fresh Coconuts</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Coconut Meat</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Coconut Water</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Coconut Milk</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Desiccated Coconut</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-wood opacity-70"></i> Coconut Flour</li>
+                    </ul>
+                    <p class="text-[13px] font-light text-charcoal/50 italic mb-8 p-4 bg-white rounded-sm shadow-sm border border-brandGreen/5">Product specifications, processing methods, packaging and order quantities can be discussed according to availability and customer requirements.</p>
+                    
+                    <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3.5 bg-brandGreen text-white text-xs uppercase tracking-widest rounded-sm hover:bg-leaf hover:shadow-lg transition-all duration-300 font-medium">
+                        Inquire About Coconuts <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-left">
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/4yHT0qrw/A-nh-ma-n-hi-nh-2026-10-11-lu-c-12-53-17.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/vBHPDnhx/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/8c7tmVqf/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/8zRwH4np/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/hj50j5h1/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/h4XkrF8S/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SẢN PHẨM B: OTHER AGRICULTURAL PRODUCTS -->
+            <div id="other-products" class="flex flex-col lg:flex-row-reverse gap-12 items-center border-t border-brandGreen/10 pt-20 scroll-mt-24">
+                <div class="lg:w-1/3" data-aos="fade-left">
+                    <div class="inline-block px-3 py-1 bg-wood/10 text-wood text-[10px] uppercase tracking-widest rounded-sm mb-6 font-bold">Expanded Portfolio</div>
+                    <h4 class="font-serif text-3xl text-charcoal mb-3">B. Other Agricultural Products</h4>
+                    <p class="font-medium text-wood mb-5">Flexible Sourcing Solutions</p>
+                    <p class="text-[15px] font-light text-charcoal/70 mb-6 leading-relaxed">Beyond coconut products, NS Farm Vietnam aims to develop sourcing opportunities for other Vietnamese agricultural products based on customer demand.</p>
+                    
+                    <p class="text-xs uppercase tracking-widest text-charcoal font-bold mb-4 border-b border-charcoal/10 pb-2">Key Commodities:</p>
+                    <ul class="grid grid-cols-2 gap-y-3 gap-x-2 text-[14px] font-medium text-charcoal/80 mb-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Black Pepper</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Cashew Nuts</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Chili Powder</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Walnuts</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Pineapples</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-wood opacity-70 text-xs"></i> Wheat Flour</li>
+                    </ul>
+                    <p class="text-[14px] font-light text-charcoal/60 italic mb-8">...and other related agricultural products.</p>
+
+                    <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3.5 border border-wood text-wood text-xs uppercase tracking-widest rounded-sm hover:bg-wood hover:text-white transition-all duration-300 font-medium">
+                        Send Your Inquiry <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-right">
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/6qZ1NXzY/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 1"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/Hs4B03NT/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 2"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/Dzm6Thw4/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 3"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/XN983Qn0/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 4"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/VN3qPbTy/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 5"></div>
+                    </div>
+                    <div class="group rounded-md bg-white p-2 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl border border-brandGreen/5">
+                        <div class="aspect-square w-full overflow-hidden rounded-sm bg-cream"><img src="https://i.postimg.cc/yYYS5Pd3/image.png" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agricultural Product 6"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SOURCING & QUALITY -->
+    <section id="sourcing" class="py-24 bg-white px-6 border-t border-brandGreen/10">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-5/12" data-aos="fade-right">
+                <h2 class="text-xs uppercase tracking-[0.2em] text-wood mb-3 font-semibold">Sourcing & Quality</h2>
+                <h3 class="font-serif text-3xl md:text-4xl text-charcoal mb-6 leading-tight">Product Specifications That Match Your Requirements</h3>
+                <p class="text-[15px] font-light text-charcoal/70 mb-8 leading-relaxed">We coordinate with suppliers and processing partners to understand customer needs and identify suitable product options.</p>
+                <div class="bg-ivory p-6 rounded-sm border border-brandGreen/10 shadow-sm">
+                    <p class="text-sm font-medium text-brandGreen leading-relaxed"><i class="fas fa-info-circle mr-2 text-wood"></i> Product details and supporting documents are confirmed with the relevant supplier before order confirmation.</p>
+                </div>
+            </div>
+            
+            <div class="lg:w-7/12 bg-ivory p-8 md:p-12 shadow-lg rounded-sm" data-aos="fade-left">
+                <p class="font-medium text-base text-charcoal mb-8 border-b border-charcoal/10 pb-4">Depending on the product, key requirements may include:</p>
+                
+                <div class="grid sm:grid-cols-2 gap-x-6 gap-y-4">
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-boxes"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Product type, grade & specifications</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-shield-alt"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Quality & food safety requirements</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-box-open"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Packaging & labeling</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-thermometer-half"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Storage conditions & shelf life</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-ship"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Quantity & shipment arrangements</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow-sm border border-brandGreen/5">
+                        <div class="w-10 h-10 rounded-sm bg-cream flex items-center justify-center text-leaf shrink-0"><i class="fas fa-file-signature"></i></div>
+                        <span class="text-[13px] text-charcoal font-medium">Applicable certificates & export docs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY WORK WITH US -->
+    <section class="py-24 bg-cream/50 px-6">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-brandGreen mb-3 font-semibold">Your Sourcing Partner in Vietnam</h2>
+            <h3 class="font-serif text-3xl md:text-4xl mb-14 text-charcoal">Why Work With NS Farm Vietnam?</h3>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] p-8 bg-white rounded-sm shadow-sm border border-black/5 text-left hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-search-location text-3xl text-brandGreen mb-4"></i>
+                    <h4 class="font-serif text-xl mb-3 text-charcoal">Flexible Product Sourcing</h4>
+                    <p class="text-[14px] font-light text-charcoal/70 leading-relaxed">We work to identify suitable Vietnamese agricultural products based on your business requirements.</p>
+                </div>
+                
+                <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] p-8 bg-white rounded-sm shadow-sm border border-black/5 text-left hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-user-check text-3xl text-wood mb-4"></i>
+                    <h4 class="font-serif text-xl mb-3 text-charcoal">Customer-Focused Solutions</h4>
+                    <p class="text-[14px] font-light text-charcoal/70 leading-relaxed">Product specifications, packaging and order details are discussed according to your needs.</p>
+                </div>
+                
+                <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] p-8 bg-white rounded-sm shadow-sm border border-black/5 text-left hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-comments text-3xl text-brandGreen mb-4"></i>
+                    <h4 class="font-serif text-xl mb-3 text-charcoal">Clear Communication</h4>
+                    <p class="text-[14px] font-light text-charcoal/70 leading-relaxed">We prioritize straightforward quotations, accurate specification confirmation and responsive coordination.</p>
+                </div>
+                
+                <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] p-8 bg-white rounded-sm shadow-sm border border-black/5 text-left hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-pallet text-3xl text-wood mb-4"></i>
+                    <h4 class="font-serif text-xl mb-3 text-charcoal">Export Coordination</h4>
+                    <p class="text-[14px] font-light text-charcoal/70 leading-relaxed">We coordinate order preparation, shipping arrangements and applicable export documentation with partners.</p>
+                </div>
+                
+                <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] p-8 bg-white rounded-sm shadow-sm border border-black/5 text-left hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-handshake text-3xl text-brandGreen mb-4"></i>
+                    <h4 class="font-serif text-xl mb-3 text-charcoal">Long-Term Cooperation</h4>
+                    <p class="text-[14px] font-light text-charcoal/70 leading-relaxed">We aim to build reliable business relationships with international importers, distributors and manufacturers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 & 7. EXPORT PROCESS & CUSTOMERS -->
+    <section id="process" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+            
+            <div class="lg:w-1/3" data-aos="fade-right">
+                <h2 class="text-xs uppercase tracking-[0.2em] text-brandGreen mb-3 font-semibold">Our Customers</h2>
+                <h3 class="font-serif text-3xl mb-6 text-charcoal">Supporting International Buyers</h3>
+                <p class="text-[15px] font-light text-charcoal/80 mb-6">We welcome inquiries from:</p>
+                
+                <ul class="text-[14px] font-medium text-charcoal/80 space-y-4 mb-8 bg-ivory p-6 rounded-sm shadow-sm border border-brandGreen/5">
+                    <li class="flex items-center gap-3"><i class="fas fa-chevron-right text-brandGreen text-[10px]"></i> Agricultural Product Importers</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-chevron-right text-brandGreen text-[10px]"></i> Distributors and Wholesalers</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-chevron-right text-brandGreen text-[10px]"></i> Food Manufacturers</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-chevron-right text-brandGreen text-[10px]"></i> Retail and Trading Companies</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-chevron-right text-brandGreen text-[10px]"></i> International Sourcing Partners</li>
+                </ul>
+                <p class="text-[13px] font-light text-charcoal/60 italic leading-relaxed">Whether you need coconut products or are looking for other agricultural commodities from Vietnam, we welcome the opportunity to discuss your requirements.</p>
+            </div>
+            
+            <div class="lg:w-2/3" data-aos="fade-left">
+                <h2 class="text-xs uppercase tracking-[0.2em] text-wood mb-3 font-semibold">Methodology</h2>
+                <h3 class="font-serif text-3xl mb-12 text-charcoal">A Clear and Practical Export Process</h3>
+                <div class="grid sm:grid-cols-2 gap-x-8 gap-y-12">
+                    <div class="flex flex-col items-start gap-3 p-4 border-l-2 border-brandGreen/20 bg-ivory/50">
+                        <span class="font-serif text-4xl text-brandGreen/30 font-bold">01</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-charcoal mb-2">Share Your Requirements</h4>
+                            <p class="font-light text-[14px] text-charcoal/70 leading-relaxed">Tell us the product, specifications, quantity, packaging and destination port.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 p-4 border-l-2 border-brandGreen/20 bg-ivory/50">
+                        <span class="font-serif text-4xl text-brandGreen/30 font-bold">02</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-charcoal mb-2">Confirm Product Availability</h4>
+                            <p class="font-light text-[14px] text-charcoal/70 leading-relaxed">We review suitable sourcing options and confirm available specifications and supporting information.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 p-4 border-l-2 border-brandGreen/20 bg-ivory/50">
+                        <span class="font-serif text-4xl text-brandGreen/30 font-bold">03</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-charcoal mb-2">Quotation & Order</h4>
+                            <p class="font-light text-[14px] text-charcoal/70 leading-relaxed">We discuss pricing, trade terms, payment conditions and the expected delivery schedule.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 p-4 border-l-2 border-brandGreen/20 bg-ivory/50">
+                        <span class="font-serif text-4xl text-brandGreen/30 font-bold">04</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-charcoal mb-2">Shipment Coordination</h4>
+                            <p class="font-light text-[14px] text-charcoal/70 leading-relaxed">We coordinate order preparation, loading, shipping and applicable export documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FINAL CTA -->
+    <section id="contact" class="py-32 bg-charcoal text-white text-center px-6 relative" style="background-image: url('https://i.pinimg.com/736x/c4/63/b2/c463b273f457a3061f84570b1b232ed9.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-blend-mode: overlay; background-color: rgba(26,36,33,0.9);">
+        <div class="max-w-4xl mx-auto" data-aos="zoom-in">
+            <h2 class="font-serif text-4xl md:text-5xl mb-6 leading-tight text-white">LET'S DISCUSS YOUR AGRICULTURAL SOURCING NEEDS</h2>
+            <p class="text-xl font-light text-white/90 mb-4 italic font-serif">Looking for agricultural products from Vietnam?</p>
+            <p class="text-[15px] font-light text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">Share your product requirements, target quantity and destination market with our team. We will work with you to review suitable sourcing options.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                <a href="https://wa.me/84766653333" target="_blank" class="inline-flex items-center justify-center px-10 py-4 bg-[#25D366] text-white hover:bg-white hover:text-[#25D366] rounded-sm transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-sm"><i class="fab fa-whatsapp text-base mr-2"></i> WhatsApp Us</a>
+                <a href="mailto:ketoan.newsmile@gmail.com" class="inline-flex items-center justify-center px-10 py-4 bg-brandGreen text-white hover:bg-white hover:text-brandGreen rounded-sm transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-sm"><i class="far fa-envelope text-base mr-2"></i> Email Us</a>
+            </div>
+
+            <p class="text-xs font-light text-white/40 italic border-t border-white/10 pt-8 max-w-xl mx-auto">*Product availability, specifications and applicable documentation are subject to confirmation for each order.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-12 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-5 text-center md:text-left">
+                <img src="https://i.postimg.cc/zvHw2p3X/newsmile-logo-vuo-ng-ne-n-trong.png" alt="NS Farm Logo" class="h-16 w-auto object-contain">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-brandGreen mb-1 tracking-wide">NS FARM VIETNAM</h3>
+                    <p class="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 font-medium">Vietnamese Agricultural Products for Global Markets.</p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a href="mailto:ketoan.newsmile@gmail.com" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-sm border border-charcoal/10 flex items-center justify-center group-hover:bg-brandGreen group-hover:border-brandGreen transition-all duration-300"><i class="far fa-envelope text-charcoal/70 group-hover:text-white"></i></div>
+                    <span class="font-medium text-sm text-charcoal/70 group-hover:text-brandGreen transition-colors">ketoan.newsmile@gmail.com</span>
+                </a>
+                <a href="https://wa.me/84766653333" target="_blank" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-sm border border-charcoal/10 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-all duration-300"><i class="fab fa-whatsapp text-charcoal/70 group-hover:text-white"></i></div>
+                    <span class="font-medium text-sm text-charcoal/70 group-hover:text-[#25D366] transition-colors">+84 7 666 5 3333</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });</script>
+</body>
+</html>
